@@ -1,0 +1,14 @@
+.productCard {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  max-width: 300px;
+
+  display: flex;
+}
+
+.containerImageCard img {
+  width: 100%;
+}
+.descriptionCard {
+  padding: 10px;
+}

@@ -1,0 +1,14 @@
+.containerProducts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 20px;
+}
+
+@media (min-width: 768px) {
+  .containerProducts {
+    justify-content: center;
+  }
+}

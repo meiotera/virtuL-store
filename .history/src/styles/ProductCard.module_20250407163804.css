@@ -1,0 +1,9 @@
+.productCard {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  max-width: 300px;
+}
+
+.containerImageCard img {
+  width: 100%;
+}

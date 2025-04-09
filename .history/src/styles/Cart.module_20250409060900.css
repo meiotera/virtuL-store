@@ -1,0 +1,21 @@
+.containerCart {
+  display: flex;
+}
+
+.cartItem {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.containerBtns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn {
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}

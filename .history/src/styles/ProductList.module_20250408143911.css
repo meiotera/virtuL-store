@@ -1,0 +1,9 @@
+.containerProducts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  gap: 20px;
+
+  border: 1px solid;
+}

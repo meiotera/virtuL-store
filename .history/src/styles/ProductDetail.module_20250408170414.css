@@ -1,0 +1,46 @@
+.container {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 16px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.image {
+  display: block;
+  width: 90%;
+  height: auto;
+  margin: 0 auto 16px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.description {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.5;
+  margin-bottom: 16px;
+}
+
+.price {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #1e231e;
+  margin-bottom: 12px;
+}
+
+.rating {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 16px;
+}

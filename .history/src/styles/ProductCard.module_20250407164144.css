@@ -1,0 +1,19 @@
+.productCard {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  max-width: 300px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.containerImageCard img {
+  width: 100%;
+
+  flex: 2 1 260;
+}
+.descriptionCard {
+  padding: 10px;
+
+  flex: 1 1 260;
+}
