@@ -1,12 +1,54 @@
-# React + Vite
+# 🛍️ Virtual Store
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicação web desenvolvida em React que simula uma loja virtual consumindo a Fake Store API. Conta com funcionalidades de listagem de produtos, visualização detalhada, carrinho de compras, controle de quantidade e finalização de pedido.
 
-Currently, two official plugins are available:
+## 🚀 Funcionalidades
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 🔎 Listagem de Produtos com avaliação e preço
 
-## Expanding the ESLint configuration
+- 📄 Página de Detalhes com descrição, imagem e avaliação
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- 🛒 Carrinho de Compras
+
+- Adicionar/remover itens
+
+- Aumentar/diminuir quantidade
+
+- Cálculo de valor total
+
+- ✅ Finalizar Compra (simulado com envio de dados para Fake Store API)
+
+- 💬 Feedback visual após adicionar um item ao carrinho
+
+- 🎯 Design Responsivo e visual moderno
+
+## 📦 Tecnologias utilizadas
+
+- React
+
+- React Router DOM
+
+- Fake Store API
+
+- CSS Modules
+
+## 📸 Demonstração
+
+![Preview da aplicação](./public/capturas/home.png)
+![Preview da aplicação](./public/capturas/lista.png)
+![Preview da aplicação](./public/capturas/carrinho.png)
+
+## Instale as dependências
+
+npm install
+
+## Execute a aplicação
+
+npm start
+Acesse em: http://localhost:3000
+
+## 📌 Observações
+
+Os usuários e pedidos são simulados, já que a Fake Store API não exige autenticação real para cadastro ou finalização de pedidos, mas foi inplementado um login fake com um usuário padrão.
+
+O estado global do carrinho é controlado via Context API.
