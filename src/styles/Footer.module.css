@@ -1,13 +1,31 @@
 .footer {
-  padding: 30px;
-  background-color: #191515;
+  background: #1f2937; /* cinza escuro */
   color: #fff;
-
-  height: 150px;
-  margin-top: 50px;
+  padding: 2rem 0;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
 }
 
 .footerContainer {
-  max-width: 1440px;
-  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.logo span {
+  background: linear-gradient(to right, #6366f1, #ec4899);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.copy {
+  font-size: 0.9rem;
+  color: #9ca3af; /* cinza claro */
 }

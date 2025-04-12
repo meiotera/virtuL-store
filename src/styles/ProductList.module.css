@@ -7,6 +7,20 @@
   gap: 20px;
 }
 
+.toast {
+  position: fixed;
+  top: 1.5rem;
+  right: 1.5rem;
+  background-color: #10b981;
+  color: #fff;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  z-index: 999;
+  font-weight: bold;
+  animation: fadein 0.3s ease, fadeout 0.3s ease 2.7s;
+}
+
 @media (min-width: 960px) {
   .containerProducts {
     justify-content: space-between;

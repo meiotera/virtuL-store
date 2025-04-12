@@ -1,13 +1,30 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
+import styles from '../styles/MenuNav.module.css';
 
 const MenuNav = () => {
   return (
-    <nav>
-      <Link to="/">Home</Link>
-      <Link to="/lista-de-produtos">Todos os produtos</Link>
-      <Link to="/cart">Sacola</Link>
+    <nav className={styles.nav}>
+      <NavLink
+        to="/"
+        className={({ isActive }) => (isActive ? styles.active : '')}
+      >
+        Home
+      </NavLink>
+      <NavLink
+        to="/lista-de-produtos"
+        className={({ isActive }) => (isActive ? styles.active : '')}
+      >
+        Todos os produtos
+      </NavLink>
+      <NavLink
+        to="/cart"
+        className={({ isActive }) => (isActive ? styles.active : '')}
+      >
+        Sacola
+      </NavLink>
     </nav>
   );
 };
+
 export default MenuNav;

@@ -2,17 +2,17 @@ import React from 'react';
 import styles from '../styles/ProductCard.module.css';
 import Button from './Button';
 import { Link } from 'react-router-dom';
+import { useCart } from '../context/CartContext';
 
-const ProductCard = ({
-  image,
-  title,
-  rating,
-  price,
-  id,
-  description,
-  category,
-}) => {
+const ProductCard = ({ image, title, rating, price, id, onAddToCart }) => {
   const { rate } = rating;
+
+  const { addToCart } = useCart();
+
+  const handleClick = () => {
+    addToCart({ id, title, image, price, rating });
+    if (onAddToCart) onAddToCart();
+  };
 
   return (
     <div className={styles.card}>
@@ -33,14 +33,7 @@ const ProductCard = ({
         </div>
       </Link>
       <div className={styles.containerBtns}>
-        <Button
-          product={{ image, title, rating, price, id, description, category }}
-          title={title}
-          price={price}
-          classBtn={'addButton'}
-        >
-          Adicionar à sacola
-        </Button>
+        <button onClick={handleClick}>Adicionar ao carrinho</button>
       </div>
     </div>
   );

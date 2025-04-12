@@ -6,7 +6,10 @@ const Header = () => {
   return (
     <header className={styles.header}>
       <div className={styles.containerHeader}>
-        <div>Virtual Store</div>
+        <div className={styles.logo}>
+          <span>🛍️</span> <strong>Virtual</strong>{' '}
+          <span className={styles.highlight}>Store</span>
+        </div>
 
         <div className={styles.navContainer}>
           <MenuNav />

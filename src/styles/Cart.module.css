@@ -1,30 +1,101 @@
+.cartWrapper {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.empty {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #6b7280;
+  margin-top: 4rem;
+}
+
 .containerCart {
   display: flex;
-  gap: 16px;
-  flex-wrap: wrap;
-
-  justify-content: space-evenly;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 
 .cartItem {
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  padding: 10px;
-
-  flex: 1;
-  min-width: 260px;
-  max-width: 300px;
+  background-color: #f9fafb;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  position: relative;
 }
 
-.containerBtns {
+.itemHeader {
   display: flex;
-  gap: 10px;
-
-  margin-top: 20px;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.btn {
+.removeBtn {
+  background: none;
   border: none;
-  padding: 5px 10px;
+  font-size: 1.2rem;
+  color: #ef4444;
   cursor: pointer;
+}
+
+.price {
+  margin: 0.5rem 0;
+  font-weight: 500;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.controls button {
+  background-color: #6366f1;
+  color: #fff;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.controls button:hover {
+  background-color: #4f46e5;
+}
+
+.controls span {
+  font-size: 1.1rem;
+  min-width: 30px;
+  text-align: center;
+}
+
+.totalPrice {
+  text-align: center;
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #4f46e5;
+  color: #fff;
+}
+
+.checkoutBtnContainer {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.checkoutBtn {
+  background-color: #10b981;
+  color: white;
+  font-size: 1rem;
+  padding: 0.75rem 2rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.checkoutBtn:hover {
+  background-color: #059669;
 }

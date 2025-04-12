@@ -1,59 +1,85 @@
 .container {
-  width: 100%;
-  margin: 0 auto;
-
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 2rem;
   background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  position: relative;
-}
-
-.descriptionContainer {
-  padding: 16px;
-  border: 1px solid #ccc;
-  margin: 16px;
-}
-.description {
-  text-align: justify;
-  font-size: 1em;
-}
-
-.rating {
-  margin: 16px 0;
-}
-
-.priceContainer {
-  margin: 16px 0;
-  text-align: center;
-  background-color: #fff5f5;
-  padding: 10px;
-  font-weight: bold;
-  border: 2px solid #221212;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.344);
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  font-family: 'Poppins', sans-serif;
 }
 
 .title {
-  font-size: 1em;
-  margin-bottom: 30px;
-
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 1.5rem;
   text-align: center;
-  color: #403f3f;
 }
 
 .imageContainer {
-  max-width: 100%;
+  text-align: center;
+  margin-bottom: 2rem;
 }
 
-.imageContainer img {
-  width: 100%;
-  padding: 10px;
+.image {
+  max-width: 250px;
+  height: auto;
+  object-fit: contain;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.image:hover {
+  transform: scale(1.05);
+}
+
+.descriptionContainer {
+  border-top: 1px solid #e5e7eb;
+  padding-top: 1.5rem;
+}
+
+.priceContainer {
+  background: #f3f4f6;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  border-radius: 8px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #10b981; /* verde */
+  box-shadow: 0 2px 8px rgba(16, 185, 129, 0.15);
+}
+
+.description {
+  font-size: 1rem;
+  color: #374151;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.rating {
+  font-size: 1rem;
+  color: #6b7280;
+  margin-bottom: 2rem;
+}
+
+.containerBtns {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
 }
 
 .containerBtns button {
-  width: 100%;
-  border-radius: 0;
-  position: fixed;
-  bottom: 0;
-  z-index: 99;
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  background-color: #6366f1;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.containerBtns button:hover {
+  background-color: #4f46e5;
 }

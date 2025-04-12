@@ -42,7 +42,9 @@ const ProductDetail = () => {
       </div>
 
       <div className={styles.containerBtns}>
-        <Button classBtn={'addButton'}>Adicionar à sacola</Button>
+        <Button product={product} classBtn={'addButton'}>
+          Adicionar à sacola
+        </Button>
       </div>
     </div>
   );
