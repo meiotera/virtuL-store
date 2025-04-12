@@ -39,13 +39,9 @@
   letter-spacing: 1px;
 }
 
-@media (max-width: 720px) {
+@media (max-width: 560px) {
   .containerHeader {
     justify-content: center;
-  }
-
-  .navContainer nav {
-    margin-top: 30px;
   }
 }
 

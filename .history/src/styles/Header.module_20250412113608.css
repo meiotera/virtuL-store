@@ -43,10 +43,6 @@
   .containerHeader {
     justify-content: center;
   }
-
-  .navContainer nav {
-    margin-top: 30px;
-  }
 }
 
 .highlight {

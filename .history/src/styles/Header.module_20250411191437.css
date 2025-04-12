@@ -8,7 +8,6 @@
 .containerHeader {
   max-width: 1440px;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
@@ -37,16 +36,6 @@
   align-items: center;
   gap: 0.3rem;
   letter-spacing: 1px;
-}
-
-@media (max-width: 720px) {
-  .containerHeader {
-    justify-content: center;
-  }
-
-  .navContainer nav {
-    margin-top: 30px;
-  }
 }
 
 .highlight {

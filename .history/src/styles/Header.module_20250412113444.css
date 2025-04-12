@@ -39,16 +39,6 @@
   letter-spacing: 1px;
 }
 
-@media (max-width: 720px) {
-  .containerHeader {
-    justify-content: center;
-  }
-
-  .navContainer nav {
-    margin-top: 30px;
-  }
-}
-
 .highlight {
   background: linear-gradient(to right, #6366f1, #ec4899);
   -webkit-background-clip: text;
