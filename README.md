@@ -2,6 +2,10 @@
 
 Aplicação web desenvolvida em React que simula uma loja virtual consumindo a Fake Store API. Conta com funcionalidades de listagem de produtos, visualização detalhada, carrinho de compras, controle de quantidade e finalização de pedido.
 
+## 🌐 Acesse a aplicação
+
+👉 [Clique aqui para acessar a loja](https://virtul-store.onrender.com)
+
 ## 🚀 Funcionalidades
 
 - 🔎 Listagem de Produtos com avaliação e preço
